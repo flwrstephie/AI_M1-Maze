@@ -4,8 +4,8 @@ using TMPro; // Add this
 
 public class AiMovement : MonoBehaviour
 {
-    public Transform target; // Assign your treasure chest here
-    public TextMeshProUGUI popText; // Assign in the Inspector
+    public Transform target;
+    public TextMeshProUGUI popText; 
 
     private NavMeshAgent agent;
     private bool hasReached = false;
@@ -17,7 +17,7 @@ public class AiMovement : MonoBehaviour
             agent.SetDestination(target.position);
 
         if (popText != null)
-            popText.gameObject.SetActive(false); // Hide on start
+            popText.gameObject.SetActive(false); 
     }
 
     void Update()
